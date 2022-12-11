@@ -1,0 +1,25 @@
+{
+  "name": "droneflyer",
+  "version": "1.0.0",
+  "description": "package to make drone flying",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "start": "node build/index.js",
+    "start:docker": "npm run build && npm start"
+  },
+  "author": "gaetan",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "prettier": "^2.8.0",
+    "prisma": "^4.6.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.6.1",
+    "@types/node": "^18.11.9",
+    "dotenv": "^16.0.3"
+  }
+}
